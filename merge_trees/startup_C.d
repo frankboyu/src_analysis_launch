@@ -1,0 +1,57 @@
+
+# DO NOT DELETE
+
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TTree.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/Compression.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/RtypesCore.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/ROOT/RConfig.hxx
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/RVersion.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/RConfigure.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/DllImport.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/ROOT/TIOFeatures.hxx
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/Rtypes.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/strtok.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/strlcpy.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/snprintf.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TGenericClassInfo.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TSchemaHelper.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TIsAProxy.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TVirtualIsAProxy.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TArrayD.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TArray.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TArrayI.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TAttFill.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TAttLine.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TAttMarker.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TClass.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TDictionary.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TNamed.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TObject.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TStorage.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TVersionCheck.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/RVersion.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TString.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TMathBase.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/ROOT/RStringView.hxx
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/ROOT/RWrap_libcpp_string_view.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/ROOT/libcpp_string_view.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/ROOT/TypeTraits.hxx
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/ESTLType.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TObjArray.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TSeqCollection.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TCollection.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TIterator.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TVirtualRWMutex.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TVirtualMutex.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TDataType.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TDirectory.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TUUID.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TList.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TBuffer.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/Bytes.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TVirtualTreePlayer.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TBranch.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TBranchCacheInfo.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TBits.h
+./startup_C.so: /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/RVersion.h /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/RConfig.h /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TClass.h /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TDictAttributeMap.h /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TInterpreter.h /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TROOT.h /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TBuffer.h /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TMemberInspector.h /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TError.h /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/RtypesImp.h /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TIsAProxy.h /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TFileMergeInfo.h /u/group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/include/TCollectionProxyInfo.h /group/halld/Software/builds/Linux_CentOS7.7-x86_64-gcc4.8.5/root/root-6.24.04/bin/rootcling
+startup_C__ROOTBUILDVERSION= 6.24/04
