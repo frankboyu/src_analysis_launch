@@ -1,10 +1,10 @@
 ## src_analysis_launch
 
-Scripts to start the analysis launch for the SRC/CT experiment
+Scripts to run data skim for the SRC/CT experiment
 
 JLab: /work/halld2/home/boyu/src_analysis_launch
 
-GitHub: https://github.com/frankboyu/src_analysis_launch/tree/master
+GitHub: https://github.com/frankboyu/src_analysis_launch
 
 
 ### Usage
@@ -54,19 +54,20 @@ GitHub: https://github.com/frankboyu/src_analysis_launch/tree/master
 3.  Start the merge
 
     Go to the merge_trees folder. Edit cron_exec.sh with the currently running VERSION and the jobs config file with the job resources and version control
+
+    If startup_C.so is missing, recompile it using:
+
+    `root startup.C++`
+
+    Then edit line 54 in script.sh to the newly compiled one
     
     To set up the merge:
     
     `sh run_merge.sh`
     
-    crontab will run the merge scripts every 15 mins in back stage, which will check the jobs in the launch workflow and submit a new job to merge the files if all jobs in one run have finished.
+    crontab will run the merge scripts every 15 mins at back stage, which will check the jobs in the launch workflow and submit a new job to merge the files if all jobs in one run have finished.
     
     Check merge_progress.log for the newest updates
-    
-    Optional: If startup_C.so is missing, recompile it and then edit line 54 in script.sh to your newly compiled one
-    
-    `root startup.C++`
-    
     
 ### Notes
 

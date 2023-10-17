@@ -6,8 +6,8 @@ import os
 db = rcdb.RCDBProvider("mysql://rcdb@hallddb/rcdb")
 
 
-#good_runs = db.select_runs("@is_src_production and @status_approved", 90001, 90662)
-good_runs = db.select_runs("@is_primex_production", 110000, 119999)
+good_runs = db.select_runs("@is_src_production and @status_approved", 90001, 90662)
+#good_runs = db.select_runs("@is_primex_production", 110000, 119999)
 
 print("List of selected runs:")
 for run in good_runs:
