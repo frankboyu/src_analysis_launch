@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="ver07_batch02"
+VERSION="ver07_batch04"
 
 date
 source /work/halld2/home/boyu/src_analysis_launch/merge_trees/env.sh

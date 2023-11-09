@@ -14,10 +14,10 @@ then
     mkdir /farm_out/boyu/src_analysis_launch/launch/test
     mkdir /farm_out/boyu/src_analysis_launch/merge_trees/test
 
-    swif2 cancel -delete -workflow src_analysis_launch
-    swif2 cancel -delete -workflow src_analysis_launch_merge
-    swif2 create -workflow src_analysis_launch
-    swif2 create -workflow src_analysis_launch_merge    
+    swif2 cancel -delete -workflow analysis_2021-11_test
+    swif2 cancel -delete -workflow analysis_2021-11_test_merge
+    swif2 create -workflow analysis_2021-11_test
+    swif2 create -workflow analysis_2021-11_test_merge   
 else    
     mkdir /volatile/halld/analysis/RunPeriod-2021-11/ver${VERSION}
     mkdir /volatile/halld/analysis/RunPeriod-2021-11/ver${VERSION}/batch01

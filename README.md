@@ -6,7 +6,6 @@ JLab: /work/halld2/home/boyu/src_analysis_launch
 
 GitHub: https://github.com/frankboyu/src_analysis_launch
 
-
 ### Usage
 
 1.  Test the reactions with one REST file
@@ -57,7 +56,7 @@ GitHub: https://github.com/frankboyu/src_analysis_launch
 
     If startup_C.so is missing, recompile it using:
 
-    `root startup.C++`
+    `sh run_compile.sh`
 
     Then edit line 54 in script.sh to the newly compiled one
     
