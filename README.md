@@ -54,7 +54,7 @@ GitHub: https://github.com/frankboyu/src_analysis_launch
 
     Go to the merge_trees folder. Edit cron_exec.sh with the currently running VERSION and the jobs config file with the job resources and version control
 
-    If startup_C.so is missing, recompile it using:
+    If startup_C.so is missing, recompile it on the ifarm node using:
 
     `sh run_compile.sh`
 

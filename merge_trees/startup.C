@@ -1,4 +1,3 @@
-//Compile this when on ifarm node
 #include "TTree.h"
 
 int startup() {

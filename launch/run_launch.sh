@@ -26,18 +26,18 @@ then
     # Launch the jobs
     if   [ ${BATCH} == "2H"  ]
     then
-        python launch.py configs/jobs_analysis_2021-11_test.cfg 90213 90213  # diamond,   164 evio files
-        python launch.py configs/jobs_analysis_2021-11_test.cfg 90578 90578  # amorphous, 148 evio files
+        python launch.py configs/jobs_analysis/jobs_analysis_2021-11_test.cfg 90213 90213  # diamond,   164 evio files
+        python launch.py configs/jobs_analysis/jobs_analysis_2021-11_test.cfg 90578 90578  # amorphous, 148 evio files
         swif2 run -workflow src_analysis_launch
     elif [ ${BATCH} == "4He" ]
     then
-        python launch.py configs/jobs_analysis_2021-11_test.cfg 90061 90061  # diamond,   172 evio files
-        python launch.py configs/jobs_analysis_2021-11_test.cfg 90062 90062  # amorphous, 184 evio files
+        python launch.py configs/jobs_analysis/jobs_analysis_2021-11_test.cfg 90061 90061  # diamond,   172 evio files
+        python launch.py configs/jobs_analysis/jobs_analysis_2021-11_test.cfg 90062 90062  # amorphous, 184 evio files
         swif2 run -workflow src_analysis_launch
     elif [ ${BATCH} == "12C" ]
     then
-        python launch.py configs/jobs_analysis_2021-11_test.cfg 90290 90290  # diamond,   184 evio files
-        python launch.py configs/jobs_analysis_2021-11_test.cfg 90288 90288  # amorphous, 196 evio files
+        python launch.py configs/jobs_analysis/jobs_analysis_2021-11_test.cfg 90290 90290  # diamond,   184 evio files
+        python launch.py configs/jobs_analysis/jobs_analysis_2021-11_test.cfg 90288 90288  # amorphous, 196 evio files
         swif2 run -workflow src_analysis_launch
     fi
 else
@@ -71,6 +71,6 @@ else
     fi
   
     # Launch the jobs
-    python launch.py configs/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90001 90662
+    python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90001 90662
     swif2 run -workflow analysis_2021-11_ver${VERSION}_batch${BATCH} -maxconcurrent 1000    
 fi    
