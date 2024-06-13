@@ -12,11 +12,6 @@ then
     rm -r /volatile/halld/home/boyu/src_analysis_launch/merge_trees
     mkdir /volatile/halld/home/boyu/src_analysis_launch/launch
     mkdir /volatile/halld/home/boyu/src_analysis_launch/merge_trees
-    
-    rm -r /farm_out/boyu/src_analysis_launch/launch/test
-    rm -r /farm_out/boyu/src_analysis_launch/merge_trees/test
-    mkdir /farm_out/boyu/src_analysis_launch/launch/test
-    mkdir /farm_out/boyu/src_analysis_launch/merge_trees/test
 
     swif2 cancel -delete -workflow analysis_2021-11_test
     swif2 cancel -delete -workflow analysis_2021-11_test_merge
@@ -28,17 +23,17 @@ then
     then
         python launch.py configs/jobs_analysis/jobs_analysis_2021-11_test.cfg 90213 90213  # diamond,   164 evio files
         python launch.py configs/jobs_analysis/jobs_analysis_2021-11_test.cfg 90578 90578  # amorphous, 148 evio files
-        swif2 run -workflow src_analysis_launch
+        swif2 run -workflow analysis_2021-11_test
     elif [ ${BATCH} == "4He" ]
     then
         python launch.py configs/jobs_analysis/jobs_analysis_2021-11_test.cfg 90061 90061  # diamond,   172 evio files
         python launch.py configs/jobs_analysis/jobs_analysis_2021-11_test.cfg 90062 90062  # amorphous, 184 evio files
-        swif2 run -workflow src_analysis_launch
+        swif2 run -workflow analysis_2021-11_test
     elif [ ${BATCH} == "12C" ]
     then
         python launch.py configs/jobs_analysis/jobs_analysis_2021-11_test.cfg 90290 90290  # diamond,   184 evio files
         python launch.py configs/jobs_analysis/jobs_analysis_2021-11_test.cfg 90288 90288  # amorphous, 196 evio files
-        swif2 run -workflow src_analysis_launch
+        swif2 run -workflow analysis_2021-11_test
     fi
 else
     # Initialization
