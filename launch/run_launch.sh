@@ -3,7 +3,8 @@
 VERSION=$1
 BATCH=$2
 
-source env.sh
+source /group/halld/Software/build_scripts/gluex_env_boot_jlab.sh
+gxenv $HALLD_VERSIONS/version.xml
 
 if   [ ${VERSION} == "test" ]
 then
@@ -16,7 +17,7 @@ then
     swif2 cancel -delete -workflow analysis_2021-11_test
     swif2 cancel -delete -workflow analysis_2021-11_test_merge
     swif2 create -workflow analysis_2021-11_test
-    swif2 create -workflow analysis_2021-11_test_merge  
+    swif2 create -workflow analysis_2021-11_test_merge
 
     # Launch the jobs
     if   [ ${BATCH} == "2H"  ]
@@ -45,27 +46,27 @@ else
         mkdir /volatile/halld/analysis/RunPeriod-2021-11/ver${VERSION}/batch03
 
         mkdir /cache/halld/RunPeriod-2021-11/analysis/ver${VERSION}
-        
+
         mkdir /farm_out/boyu/src_analysis_launch/launch/ver${VERSION}
         mkdir /farm_out/boyu/src_analysis_launch/launch/ver${VERSION}/batch01
         mkdir /farm_out/boyu/src_analysis_launch/launch/ver${VERSION}/batch02
         mkdir /farm_out/boyu/src_analysis_launch/launch/ver${VERSION}/batch03
-        
+
         mkdir /farm_out/boyu/src_analysis_launch/merge_trees/ver${VERSION}
         mkdir /farm_out/boyu/src_analysis_launch/merge_trees/ver${VERSION}/batch01
         mkdir /farm_out/boyu/src_analysis_launch/merge_trees/ver${VERSION}/batch02
         mkdir /farm_out/boyu/src_analysis_launch/merge_trees/ver${VERSION}/batch03
-        
+
         swif2 create -workflow analysis_2021-11_ver${VERSION}_batch01
         swif2 create -workflow analysis_2021-11_ver${VERSION}_batch02
         swif2 create -workflow analysis_2021-11_ver${VERSION}_batch03
 
-        swif2 create -workflow analysis_2021-11_ver${VERSION}_batch01_merge   
-        swif2 create -workflow analysis_2021-11_ver${VERSION}_batch02_merge   
-        swif2 create -workflow analysis_2021-11_ver${VERSION}_batch03_merge 
+        swif2 create -workflow analysis_2021-11_ver${VERSION}_batch01_merge
+        swif2 create -workflow analysis_2021-11_ver${VERSION}_batch02_merge
+        swif2 create -workflow analysis_2021-11_ver${VERSION}_batch03_merge
     fi
-  
+
     # Launch the jobs
     python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90001 90662
-    swif2 run -workflow analysis_2021-11_ver${VERSION}_batch${BATCH} -maxconcurrent 1000    
-fi    
+    swif2 run -workflow analysis_2021-11_ver${VERSION}_batch${BATCH} -maxconcurrent 1000
+fi
