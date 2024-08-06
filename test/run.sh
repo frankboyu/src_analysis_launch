@@ -3,7 +3,8 @@
 MODE=$1
 TARGET=$2
 
-source env.sh
+source /group/halld/Software/build_scripts/gluex_env_boot_jlab.sh
+gxenv $HALLD_VERSIONS/version.xml
 
 if   [ "${MODE}" == "get" ]
 then
@@ -16,7 +17,7 @@ then
     elif [ "${TARGET}" == "12C" ]
     then
         jcache get /mss/halld/RunPeriod-2021-11/recon/ver01/REST/090290/dana_rest_090290_000.hddm
-    fi    
+    fi
 elif [ "${MODE}" == "check" ]
 then
     if   [ "${TARGET}" == "2H"  ]
@@ -28,7 +29,7 @@ then
     elif [ "${TARGET}" == "12C" ]
     then
         ls /cache/halld/RunPeriod-2021-11/recon/ver01/REST/090290
-    fi     
+    fi
 elif [ "${MODE}" == "run" ]
 then
     if   [ "${TARGET}" == "2H"  ]
@@ -45,4 +46,4 @@ elif [ "${MODE}" == "clear" ]
 then
     rm hd_root.root
     rm tree*
-fi  
+fi
