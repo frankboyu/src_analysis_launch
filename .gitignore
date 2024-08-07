@@ -1,3 +1,4 @@
 **/.vscode
 **/.ipynb_checkpoints
 *.root
+merge_trees/merge_progress.log
