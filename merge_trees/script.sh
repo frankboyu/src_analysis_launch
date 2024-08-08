@@ -51,8 +51,8 @@ Merge_Files()
 
 	#cp -v $INPUTDIR/$TYPE/$RUN/${TYPE}_${RUN}_*.root .
 
-	LD_PRELOAD=/work/halld2/home/boyu/src_analysis_launch/merge_trees/startup_C.so hadd $TEMP_FILE $INPUTDIR/$TYPE/$RUN/${TYPE}_${RUN}_*.root
-	#hadd $TEMP_FILE $INPUTDIR/$TYPE/$RUN/${TYPE}_${RUN}_*.root
+	# LD_PRELOAD=/work/halld2/home/boyu/src_analysis_launch/merge_trees/startup_C.so hadd $TEMP_FILE $INPUTDIR/$TYPE/$RUN/${TYPE}_${RUN}_*.root
+	hadd $TEMP_FILE $INPUTDIR/$TYPE/$RUN/${TYPE}_${RUN}_*.root
 	# RETURN CODE
 	RETURN_CODE=$?
 
@@ -173,7 +173,7 @@ Save_OutputFiles()
 	Save_Files
 
 	# ONLY IF SUCCESSFULLY SAVED, CALL DELETE FUNCTION
-	Delete_InputFiles
+	# Delete_InputFiles
 		
 	# SEE WHAT FILES ARE LEFT
 	echo "FILES REMAINING AFTER SAVING:"
