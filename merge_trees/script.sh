@@ -173,7 +173,7 @@ Save_OutputFiles()
 	Save_Files
 
 	# ONLY IF SUCCESSFULLY SAVED, CALL DELETE FUNCTION
-	# Delete_InputFiles
+	Delete_InputFiles
 		
 	# SEE WHAT FILES ARE LEFT
 	echo "FILES REMAINING AFTER SAVING:"
