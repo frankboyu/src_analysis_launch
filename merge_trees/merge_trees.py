@@ -379,13 +379,13 @@ def main(argv):
 	# RETRY FAILED JOBS
 	print("\n")
 	print("Retry failed jobs in the launch workflow: ")
-	command = "/usr/local/bin/swif2 retry-jobs -workflow " + LAUNCH_WORKFLOW + " -problems SLURM_FAILED SLURM_CANCELLED SLURM_TIMEOUT SLURM_NODE_FAIL SITE_LAUNCH_FAIL SITE_PREP_FAIL SWIF_INPUT_FAIL SWIF_SYSTEM_ERROR"
+	command = "/usr/local/bin/swif2 retry-jobs -workflow " + LAUNCH_WORKFLOW + " -problems SLURM_FAILED SLURM_CANCELLED SLURM_TIMEOUT SLURM_NODE_FAIL SLURM_OUT_OF_MEMORY SITE_LAUNCH_FAIL SITE_PREP_FAIL SWIF_INPUT_FAIL SWIF_SYSTEM_ERROR"
 	if VERBOSE > 1:
 			print(command)
 	try_command(command)
 
 	print("Retry failed jobs in the merge workflow: ")
-	command = "/usr/local/bin/swif2 retry-jobs -workflow " + MERGE_WORKFLOW + " -problems SLURM_FAILED SLURM_CANCELLED SLURM_TIMEOUT SLURM_NODE_FAIL SITE_LAUNCH_FAIL SITE_PREP_FAIL SWIF_INPUT_FAIL SWIF_SYSTEM_ERROR"
+	command = "/usr/local/bin/swif2 retry-jobs -workflow " + MERGE_WORKFLOW + " -problems SLURM_FAILED SLURM_CANCELLED SLURM_TIMEOUT SLURM_NODE_FAIL SLURM_OUT_OF_MEMORY SITE_LAUNCH_FAIL SITE_PREP_FAIL SWIF_INPUT_FAIL SWIF_SYSTEM_ERROR"
 	if VERBOSE > 1:
 			print (command)
 	try_command(command)
