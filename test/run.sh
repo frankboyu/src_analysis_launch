@@ -3,8 +3,10 @@
 MODE=$1
 TARGET=$2
 
-source /group/halld/Software/build_scripts/gluex_env_boot_jlab.sh
-gxenv $HALLD_VERSIONS/version.xml
+source /work/halld2/home/boyu/src_analysis_launch/launch/configs/custom_plugins/ver10/env.sh
+
+# source /group/halld/Software/build_scripts/gluex_env_boot_jlab.sh
+# gxenv $HALLD_VERSIONS/version.xml
 
 if   [ "${MODE}" == "get" ]
 then
@@ -44,6 +46,5 @@ then
     fi
 elif [ "${MODE}" == "clear" ]
 then
-    rm hd_root.root
-    rm tree*
+    rm *.root
 fi
