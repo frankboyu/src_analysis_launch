@@ -3,7 +3,7 @@
 MODE=$1
 TARGET=$2
 
-source /work/halld2/home/boyu/src_analysis_launch/launch/configs/custom_plugins/ver10/env.sh
+source /work/halld2/home/boyu/src_analysis_launch/launch/configs/custom_plugins/ver10/version_5.21.0.sh
 
 # source /group/halld/Software/build_scripts/gluex_env_boot_jlab.sh
 # gxenv $HALLD_VERSIONS/version.xml
