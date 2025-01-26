@@ -146,7 +146,7 @@ Create_Hists()
 	mkdir -p -m 755 ${SURVEYDIR_THIS}
 	mv $PWD/${TYPE}_${RUN}_hist.root ${SURVEYDIR_THIS}/
 
-	rm $PWD/$TEMP_FILE
+	# rm $PWD/$TEMP_FILE
 	
     done
 }
@@ -235,7 +235,7 @@ Delete_InputFiles()
 	
 	# DELETE OR UNPIN INPUTFILES
 	echo Delete $TYPE
-	rm -rf $INPUTDIR/$TYPE/$RUN/*
+	# rm -rf $INPUTDIR/$TYPE/$RUN/*
 	#jcache unpin $INPUTDIR/$TYPE/$RUN/*
 	
     done
