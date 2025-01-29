@@ -45,8 +45,6 @@ else
         mkdir /volatile/halld/analysis/RunPeriod-2021-11/ver${VERSION}/batch02
         mkdir /volatile/halld/analysis/RunPeriod-2021-11/ver${VERSION}/batch03
 
-        mkdir /cache/halld/RunPeriod-2021-11/analysis/ver${VERSION}
-
         mkdir /farm_out/boyu/src_analysis_launch/launch/ver${VERSION}
         mkdir /farm_out/boyu/src_analysis_launch/launch/ver${VERSION}/batch01
         mkdir /farm_out/boyu/src_analysis_launch/launch/ver${VERSION}/batch02
