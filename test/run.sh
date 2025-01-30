@@ -24,13 +24,13 @@ elif [ "${MODE}" == "check" ]
 then
     if   [ "${TARGET}" == "2H"  ]
     then
-        ls /cache/halld/RunPeriod-2021-11/recon/ver01/REST/090213
+        ls -lh /cache/halld/RunPeriod-2021-11/recon/ver01/REST/090213
     elif [ "${TARGET}" == "4He" ]
     then
-        ls /cache/halld/RunPeriod-2021-11/recon/ver01/REST/090061
+        ls -lh /cache/halld/RunPeriod-2021-11/recon/ver01/REST/090061
     elif [ "${TARGET}" == "12C" ]
     then
-        ls /cache/halld/RunPeriod-2021-11/recon/ver01/REST/090290
+        ls -lh /cache/halld/RunPeriod-2021-11/recon/ver01/REST/090290
     fi
 elif [ "${MODE}" == "run" ]
 then
