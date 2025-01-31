@@ -1,6 +1,6 @@
 #!/bin/bash
 
-VERSION="ver10_batch01"
+VERSION="ver10_batch02"
 
 date
 source /group/halld/Software/build_scripts/gluex_env_boot_jlab.sh
