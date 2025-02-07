@@ -193,7 +193,7 @@ Save_Files()
 	    continue
 	elif [ "$TYPE" == "hists" ] || [ "$TYPE" == "hd_root" ] || [ "$TYPE" == "flat" ] || [ "$TYPE" == "survey" ] || [ "$TYPE" == "pdf" ] ; then 
 	    local TEMP_FILE="hd_root_${RUN}.root"
-	    continue
+	    # continue
 	else
 	    local TEMP_FILE="${TYPE}_${RUN}.root"
 	fi
