@@ -4,7 +4,7 @@ MODE=$1
 TARGET=$2
 
 source /group/halld/Software/build_scripts/gluex_env_boot_jlab.sh
-gxenv /work/halld2/home/boyu/src_software_builds/halld_versions_srcct/analysis-2021_11-ver11.xml
+gxenv /group/halld/www/halldweb/html/halld_versions/version_6.5.0.xml
 
 if   [ "${MODE}" == "get" ]
 then
