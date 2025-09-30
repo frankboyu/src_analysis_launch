@@ -65,6 +65,19 @@ else
     fi
 
     # Launch the jobs
-    python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90001 90662
+    # python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90001 90662
+
+    python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90597 90597
+    python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90227 90227
+    python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90223 90223
+    python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90225 90225
+    python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90229 90229
+    python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90219 90219
+    python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90211 90211
+    python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90213 90213
+    python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90210 90210
+    python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90209 90209
+    python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90208 90208
+
     swif2 run -workflow analysis_2021-11_ver${VERSION}_batch${BATCH} -maxconcurrent 1500
 fi
