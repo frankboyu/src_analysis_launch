@@ -104,7 +104,7 @@ Save_OutputFiles()
 	ls -l
 
 	# REMOVE INPUT FILE: so that it's easier to determine which remaining files are skims
-	# rm -f $INPUTFILE
+	rm -f $INPUTFILE
 
 	# CALL SAVE FUNCTIONS
 	Save_Histograms
