@@ -58,7 +58,7 @@ Merge_Files()
 	# RETURN CODE
 	RETURN_CODE=$?
 
-	#rm ${TYPE}_${RUN}_*.root
+	rm ${TYPE}_${RUN}_*.root
 	
 	echo "Return Code = " $RETURN_CODE
 	if [ $RETURN_CODE -ne 0 ]; then
