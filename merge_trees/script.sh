@@ -44,8 +44,8 @@ Merge_Files()
 	    continue
 	elif [ "$TYPE" == "hists" ] || [ "$TYPE" == "hd_root" ] || [ "$TYPE" == "flat" ] || [ "$TYPE" == "survey" ] || [ "$TYPE" == "pdf" ] ; then 
 	    local TEMP_FILE="hd_root_${RUN}.root"
-        LD_PRELOAD=/work/halld2/home/boyu/src_analysis_launch/merge_trees/startup_C.so hadd $TEMP_FILE $INPUTDIR/$TYPE/$RUN/hd_root_${RUN}_*.root
-	    # continue
+        # LD_PRELOAD=/work/halld2/home/boyu/src_analysis_launch/merge_trees/startup_C.so hadd $TEMP_FILE $INPUTDIR/$TYPE/$RUN/hd_root_${RUN}_*.root
+	    continue
 	else
 	    local TEMP_FILE="${TYPE}_${RUN}.root"
         LD_PRELOAD=/work/halld2/home/boyu/src_analysis_launch/merge_trees/startup_C.so hadd $TEMP_FILE $INPUTDIR/$TYPE/$RUN/${TYPE}_${RUN}_*.root
@@ -193,7 +193,7 @@ Save_Files()
 	    continue
 	elif [ "$TYPE" == "hists" ] || [ "$TYPE" == "hd_root" ] || [ "$TYPE" == "flat" ] || [ "$TYPE" == "survey" ] || [ "$TYPE" == "pdf" ] ; then 
 	    local TEMP_FILE="hd_root_${RUN}.root"
-	    # continue
+	    continue
 	else
 	    local TEMP_FILE="${TYPE}_${RUN}.root"
 	fi
