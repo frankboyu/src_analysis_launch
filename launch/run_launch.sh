@@ -65,8 +65,7 @@ else
     fi
 
     # Launch the jobs
-    # python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90001 90662
-    python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90228 90662
+    python launch.py configs/jobs_analysis/jobs_analysis_2021-11_ver${VERSION}_batch${BATCH}.cfg 90001 90662
 
     swif2 run -workflow analysis_2021-11_ver${VERSION}_batch${BATCH} -maxconcurrent 1500
 fi
